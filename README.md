@@ -18,6 +18,7 @@ To interact with websocket server, [Socket.io client](https://socket.io/) is use
 # how to?
 
 You will need a specific websocket server, you can find it [here](https://github.com/Armoredbrain/notesync-server)
+Then launch app with `yarn start`
 
 # how does it look?
 
