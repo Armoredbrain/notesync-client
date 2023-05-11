@@ -1,13 +1,13 @@
 import "./styles.css";
 import { io } from "socket.io-client";
-import Editor from "./Editor";
 import SocketWrapper from "./SocketWrapper";
+import React from "react";
 
-function App() {
-  const socket = io("127.0.0.1:7777", {
-    transports: ["websocket"],
-  });
+function App(): React.JSX.Element {
+    const socket = io("127.0.0.1:7777", {
+        transports: ["websocket"],
+    });
 
-  return <SocketWrapper socket={socket} />;
+    return <SocketWrapper socket={socket} />;
 }
 export default App;
